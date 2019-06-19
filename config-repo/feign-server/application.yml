@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: feign-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jack90john_user_center?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: root
+    initialize: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka,http://peer2:1112/eureka
+feign:
+  hystrix:
+    enabled: true
+security:
+  oauth2:
+    resource:
+      #      jwt:
+      #        key-uri: http://localhost:9098/oauth/token_key
+      userInfoUri: http://localhost:9098/users/current
+      preferTokenInfo: false

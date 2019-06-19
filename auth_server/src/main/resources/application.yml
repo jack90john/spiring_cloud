@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: service-auth
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jack90john_user_center?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true
+#  redis:
+#    host: 172.16.10.43
+#    database: 1
+
+server:
+  port: 9098
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/

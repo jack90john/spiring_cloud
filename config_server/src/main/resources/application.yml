@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git-url
+          searchPaths: searchPaths
+          username: username
+          password: password
+server:
+  port: 9003
