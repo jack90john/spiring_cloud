@@ -21,4 +21,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:1111/eureka/
+      defaultZone: http://eureka1:1111/eureka/

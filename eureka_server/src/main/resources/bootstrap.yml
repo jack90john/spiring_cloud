@@ -5,4 +5,4 @@ spring:
     config:
       uri: http://localhost:9003/
       label: master
-      profile: peer1
+      profile: eureka1
