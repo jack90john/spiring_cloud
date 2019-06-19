@@ -2,9 +2,9 @@ server:
   port: 1111
 eureka:
   instance:
-    hostname: peer1
+    hostname: eureka1
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-     defaultZone: http://peer2:1112/eureka/
+     defaultZone: http://eureka2:1112/eureka/
